@@ -14,7 +14,7 @@ const Cards = ({data:{confirmed,recovered,deaths,lastUpdate}}) => {
             <Grid container spacing={3} justify="center">
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card,styles.infected)}>
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Infected</Typography>
+                        <Typography variant="h6" color="textSecondary" gutterBottom className={styles.text}>තහවුරු කළ රෝගීන්</Typography>
                         <Typography variant="h5">
                         <CountUp
                             start={0}
@@ -24,12 +24,12 @@ const Cards = ({data:{confirmed,recovered,deaths,lastUpdate}}) => {
                         />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of Active Cases of COVID-19</Typography>
+                        <Typography variant="h6">මුළු තහවුරු කළ රෝගීන් සංඛ්‍යාව COVID-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Recovered</Typography>
+                        <Typography variant="h6" color="textSecondary" gutterBottom className={styles.text}>සුවය ලැබුවන්</Typography>
                         <Typography variant="h5">
                         <CountUp
                             start={0}
@@ -39,12 +39,12 @@ const Cards = ({data:{confirmed,recovered,deaths,lastUpdate}}) => {
                         />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of Recoveries from COVID-19</Typography>
+                        <Typography variant="h6">මුළු සුවය ලැබුවන් සංඛ්‍යාව COVID-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Deaths</Typography>
+                        <Typography variant="h6" color="textSecondary" gutterBottom className={styles.text}>මරණ</Typography>
                         <Typography variant="h5">
                             <CountUp
                                 start={0}
@@ -54,7 +54,7 @@ const Cards = ({data:{confirmed,recovered,deaths,lastUpdate}}) => {
                             />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of Deaths caused by COVID-19</Typography>
+                        <Typography variant="h6">මුළු මරණ සංඛ්‍යාව COVID-19</Typography>
                     </CardContent>
                 </Grid>
             </Grid>
