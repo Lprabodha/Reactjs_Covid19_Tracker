@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create Covide Tracker App
 
 I'm going to build and deploy a corona tracker application. Covered topics: React.js, Chart.js, Material UI, and much more. 
 API used: https://covid19.mathdro.id/api
